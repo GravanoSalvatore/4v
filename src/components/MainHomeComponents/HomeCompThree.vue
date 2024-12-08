@@ -224,7 +224,8 @@
         <div class="d-flex h-100">
           <div class="project-text text-center w-100 my-auto text-lg-left">
             <p style="font-size: 17px;" class="mb-0 text-white-50">
-              BridgeX {{$t('4V.NEWS is an innovative platform that combines')}}
+              BridgeX это революционная платформа, предназначенная для решения одного из самых актуальных вызовов, стоящих перед современным блокчейн-сообществом: кроссчейн взаимодействие и конфиденциальность. 
+               <!-- {{$t('4V.NEWS is an innovative platform that combines')}} -->
             </p>
           </div>
         </div>

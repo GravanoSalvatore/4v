@@ -134,6 +134,7 @@ export default {
       scrollPosition: 0,
       cards: [
         { title: '4V.WEB 3.0', description: '4V.WEB 3.0' },
+        { title: '4V.BRIDGEX', description: 'BridgeGrid' },
         { title: '4V.DEX', description: '4V.DEX' },
         { title: '4V.ROBOT', description: '4V.ROBOT' },
         { title: '4V.CRYPTO', description: '4V.CRYPTO' },
@@ -141,10 +142,10 @@ export default {
         { title: 'DISTRIBUTOR (Automatic Content Distributor)', description: 'DISTRIBUTOR (Automatic Content Distributor)' },
         { title: 'CONTENTWISE (Content Wise Engine)', description: 'CONTENTWISE (Content Wise Engine)' },
         { title: '4V.COIN', description: '4V.COIN' },
-        { title: '4V.BRIDGEX', description: '4V.WEB 3.0' },
+       
         { title: 'DAO', description: 'DAO' },
         { title: '4V.WEB 3.0', description: '4V.WEB 3.0' },
-        { title: '4V.BOT', description: '4V.ROBOT' },
+        { title: '4V.BOT', description: '4V.BOT' },
         { title: 'SMARTSHARE (Intelligent Sharing Protocol)', description: 'SMARTSHARE (Intelligent Sharing Protocol)' },
         { title: '4V.DEFI', description: '4V.DEFI' },
         { title: 'GLIDE(Global Localized Intelligent Dynamic Engine)', description: 'GLIDE(Global Localized Intelligent Dynamic Engine)' },
