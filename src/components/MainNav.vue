@@ -63,7 +63,7 @@
               </router-link>
             </li> -->
 
-            <li  @click="closeNavbar" class="nav-item">
+            <!-- <li  @click="closeNavbar" class="nav-item">
               <router-link
              
                 to="/team"
@@ -77,7 +77,7 @@
               >
                 {{$t('Team')}}
               </router-link>
-            </li>
+            </li> -->
 
             <!-- <li class="nav-item">
               <router-link
@@ -94,7 +94,7 @@
               </router-link>
             </li> -->
 
-            <li   @click="closeNavbar" class="nav-item">
+            <!-- <li   @click="closeNavbar" class="nav-item">
               <router-link
             
                 to="/about"
@@ -106,15 +106,49 @@
                   { 'active-link ': isRouteActive('/about') },
                 ]"
               >
-                4V.Bridge<span class="text-danger">X</span>
+                4V.Bridge<span style="" class="text-danger">X</span>
               </router-link>
+            </li> -->
+           
+           
+            <li @click="closeNavbar" class="nav-item position-relative">
+              <router-link
+                to="/about"
+                class="nav-link"
+                :class="[
+                  isRouteActive('/about')
+                    ? 'text-white active'
+                    : 'text-white-50',
+                  { 'active-link ': isRouteActive('/about') },
+                ]"
+              >
+                4V.Bridge<span style="" class="text-danger position-relative">X</span>
+              </router-link>
+              <!-- Бейджик beta -->
+              <!-- <span
+                class="badge bg-success  text-white position-absolute"
+                style="
+                /* background-color:cornflowerblue; */
+                  top: -12px;
+                  right: 0px;
+                  font-size: 8px;
+                  font-weight: bold;
+                  text-transform: uppercase;
+                "
+              >
+                alpha
+              </span> -->
             </li>
-           
-           
-           
            
             <div class="nav-item drop-menu" style="" v-if="!isDesktop">
               <hr class="text-white"/>
+            
+            
+            
+              <li  class="mt-2"><router-link to="/techSpec" class="pointer text-uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-layers" viewBox="0 0 16 16">
+  <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0zM8 9.433 1.562 6 8 2.567 14.438 6z"/>
+</svg> {{$t('4V doc')}}</router-link></li>       
+            
               <router-link
               @click="closeNavbar" to="/terms" class=""
               style="display: block;"> 
@@ -134,25 +168,25 @@ style="display: block;">
 </svg> {{$t('PRIVACY POLICY')}} </li>
 </router-link>
 
-<router-link
-@click="closeNavbar" to="/blog" class=""
+<!-- <router-link
+@click="closeNavbar" to="/token" class=""
 style="display: block;"><li @click="$router.push('/blog')"  class="mt-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-heading" viewBox="0 0 16 16">
   <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
   <path d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5m0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5z"/>
 </svg> {{$t('WHITE PAPER')}} </li>
-</router-link>
-<router-link
-@click="closeNavbar" to="/benefits" class=""
+</router-link> -->
+<!-- <router-link
+@click="closeNavbar" to="/techSpec" class=""
 style="display: block;"><li @click="$router.push('/benefits')"  class="mt-4 text-uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-layers" viewBox="0 0 16 16">
   <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0zM8 9.433 1.562 6 8 2.567 14.438 6z"/>
 </svg> {{$t('TECH SPEC')}} </li>
-</router-link>
-<router-link
-@click="closeNavbar" to="/referal" class=""
+</router-link> -->
+<!-- <router-link
+@click="closeNavbar" to="/road" class=""
 style="display: block;"><li @click="$router.push('/referal')"  class="mt-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-diagram-2" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
 </svg> {{$t('ROAD MAP')}} </li>
-</router-link>
+</router-link> -->
 <img class="" style="width: 80px;" src="https://static.vecteezy.com/system/resources/previews/022/721/714/non_2x/youtube-logo-for-popular-online-media-content-creation-website-and-application-free-png.png">
  
             </div>
@@ -180,16 +214,16 @@ style="display: block;"><li @click="$router.push('/referal')"  class="mt-4"><svg
   <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
   <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
 </svg> {{$t('PRIVACY POLICY')}}</router-link></li>
-            <li  class="mt-2"><router-link to="/blog" class="pointer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-heading" viewBox="0 0 16 16">
+            <!-- <li  class="mt-2"><router-link to="/token" class="pointer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-heading" viewBox="0 0 16 16">
   <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
   <path d="M3 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5m0-5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5z"/>
-</svg> {{$t('WHITE PAPER')}}</router-link></li>
-            <li  class="mt-2"><router-link to="/benefits" class="pointer text-uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-layers" viewBox="0 0 16 16">
+</svg> {{$t('WHITE PAPER')}}</router-link></li> -->
+            <li  class="mt-2"><router-link to="/techSpec" class="pointer text-uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green" class="bi bi-layers" viewBox="0 0 16 16">
   <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0zM8 9.433 1.562 6 8 2.567 14.438 6z"/>
-</svg> {{$t('TECH SPEC')}}</router-link></li>
-            <li  class="mt-2"><router-link to="/referal" class="pointer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-diagram-2" viewBox="0 0 16 16">
+</svg> {{$t('4V doc')}}</router-link></li>
+            <!-- <li  class="mt-2"><router-link to="/road" class="pointer"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow" class="bi bi-diagram-2" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5zM3 11.5A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
-</svg> {{$t('ROAD MAP')}} </router-link></li> 
+</svg> {{$t('ROAD MAP')}} </router-link></li>  -->
 <!-- <li  class="mt-2"><router-link to="/terms" class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="turquoise" class="bi bi-card-checklist" viewBox="0 0 16 16">
   <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
   <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0M7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/>
@@ -321,109 +355,7 @@ style="display: block;"><li @click="$router.push('/referal')"  class="mt-4"><svg
 </template> 
 
 <script>
-// export default {
-//   data() {
-//     return {
-//       showModal: false,
-//       isDropdownOpen: false,
-//       navbarOpen: false,
-//       isDocumentationActive: false,
-//       isScrolled: false,
-//       isDesktop: window.innerWidth >= 992, 
-//     };
-//   },
-//   mounted() {
-//     const savedLanguage = localStorage.getItem("preferredLanguage");
-//     if (savedLanguage) {
-//       this.$i18n.locale = savedLanguage; // Установка сохранённого языка
-//     } else {
-//       this.detectLocationLanguage(); // Определение языка по локации
-//     }
-//     window.addEventListener("scroll", this.handleScroll);
-//     window.addEventListener("resize", this.checkWindowSize); // Добавляем слушатель на изменение окна
-//   },
-//   beforeDestroy() {
-//     window.removeEventListener("scroll", this.handleScroll);
-//     window.removeEventListener("resize", this.checkWindowSize); // Убираем слушатель при уничтожении компонента
-//   },
 
-//   methods: {
-//     async detectLocationLanguage() {
-//       try {
-//         const response = await fetch("https://ipapi.co/json/");
-//         const data = await response.json();
-//         const countryCode = data.country_code;
-        
-//         const languageMap = {
-//           RU: "ru",
-//           SA: "ar",
-//           CN: "zh-CN",
-//           DE: "de",
-//           ES: "es",
-//           FR: "fr",
-//           IN: "hi",
-//           IT: "it",
-//           JP: "ja",
-//           KR: "ko",
-//           NL: "nl",
-//           PL: "pl",
-//           PT: "pt",
-//           TR: "tr",
-//           UA: "uk",
-//           GB: "en",
-//           US: "en",
-//         };
-
-//         const detectedLanguage = languageMap[countryCode] || "en";
-//         this.$i18n.locale = detectedLanguage;
-//         localStorage.setItem("preferredLanguage", detectedLanguage);
-//       } catch (error) {
-//         console.error("Ошибка при определении языка по IP:", error);
-//         this.$i18n.locale = "en";
-//         localStorage.setItem("preferredLanguage", "en");
-//       }
-//     },
-//   //   changeLanguage(lang) {
-//   //   console.log('Current language before change:', this.$i18n.locale); // Логирование текущего языка
-//   //   this.$i18n.locale = lang; // Изменение языка на выбранный
-//   //   console.log('Language changed to:', this.$i18n.locale); // Логирование изменения языка
-//   //   this.closeModal(); // Закрытие модального окна
-//   // },
-//   async changeLanguage(lang) {
-//       if (lang === 'auto') {
-//         await this.detectLocationLanguage();
-//       } else {
-//         this.$i18n.locale = lang;
-//         localStorage.setItem("preferredLanguage", lang);
-//       }
-//       this.closeModal();
-//     },
-//     checkWindowSize() {
-//       this.isDesktop = window.innerWidth >= 992; // Обновляем флаг для мобильной/десктопной версии
-//     },
-//     openModal() {
-//       this.showModal = true;
-//     },
-//     closeModal() {
-//       this.showModal = false;
-//     },
-//     toggleDropdown() {
-//       this.isDropdownOpen = !this.isDropdownOpen;
-//     },
-//     handleScroll() {
-//       this.isScrolled = window.scrollY > 30;
-//     },
-//     isRouteActive(route) {
-//       return this.$route.path === route;
-//     },
-//     toggleNavbar() {
-//       this.navbarOpen = !this.navbarOpen;
-//     },
-//     closeNavbar() {
-//       this.navbarOpen = false;
-//     },
-//   },
-// };
 export default {
   data() {
     return {
@@ -454,7 +386,30 @@ export default {
     window.removeEventListener("scroll", this.handleScroll);
     window.removeEventListener("resize", this.checkWindowSize);
   },
+  beforeDestroy() {
+    // Убираем обработчик при уничтожении компонента
+    document.removeEventListener("click", this.handleOutsideClick);
+  },
   methods: {
+    toggleDropdown() {
+      this.isDropdownOpen = !this.isDropdownOpen;
+
+      if (this.isDropdownOpen) {
+        // Добавляем обработчик кликов вне дропдауна
+        document.addEventListener("click", this.handleOutsideClick);
+      } else {
+        // Убираем обработчик, если меню закрыто
+        document.removeEventListener("click", this.handleOutsideClick);
+      }
+    },
+    handleOutsideClick(event) {
+      const dropdown = this.$el.querySelector(".dropdown-menu");
+      if (!dropdown.contains(event.target)) {
+        this.isDropdownOpen = false;
+        document.removeEventListener("click", this.handleOutsideClick); // Убираем обработчик
+      }
+    },
+  
     async setLanguageBasedOnLocation() {
       try {
         const response = await fetch("https://ipapi.co/json/");
@@ -513,9 +468,9 @@ export default {
     closeModal() {
       this.showModal = false;
     },
-    toggleDropdown() {
-      this.isDropdownOpen = !this.isDropdownOpen;
-    },
+    // toggleDropdown() {
+    //   this.isDropdownOpen = !this.isDropdownOpen;
+    // },
     handleScroll() {
       this.isScrolled = window.scrollY > 30;
     },
@@ -538,7 +493,7 @@ export default {
 @media (max-width: 991px) {
   .navbar-collapse {
     bottom: 0;
-    top:6.5%;
+    top:9%;
     left: 0;
     right: 0;
     position: fixed;
@@ -626,6 +581,8 @@ export default {
 }
 
 .navbar-toggler {
+  color: white;
+  border: 1px solid white; /* Стиль для кнопки тумблера */
   margin-right: 20px; /* Добавляем отступ справа для кнопки */
 }
 a{
@@ -748,10 +705,7 @@ li {
 }
 
 /* Дополнительные стили для кнопки на мобильных устройствах */
-.navbar-toggler {
-  color: white;
-  border: 1px solid white; /* Стиль для кнопки тумблера */
-}
+
 
 .navbar-toggler-icon {
   filter: brightness(0) invert(1); /* Для белой иконки тумблера */
@@ -824,6 +778,57 @@ li {
 .modal-body .list-group li:active {
   background-color: rgba(255, 255, 255, 0.2); /* Цвет фона при клике */
   color: #008c9e; /* Изменение цвета текста при клике */
+}
+
+
+
+
+
+
+.dropdown-menu {
+  opacity: 0;
+  transform: scaleY(0.9); /* Начальное состояние */
+  transform-origin: top;
+  transition: opacity 0.3s ease, transform 0.3s ease, max-height 0.3s ease;
+  display: block; /* Блок для управления */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: auto;
+  padding: 10px;
+  background-color: #091520;
+  border-radius: 8px;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden; /* Избегаем растягивания содержимого */
+  max-height: 0; /* Закрытое состояние */
+  visibility: hidden; /* Скрываем элемент полностью */
+
+  /* Адаптивный размер */
+  @media (max-width: 768px) {
+    width: 90%;
+    left: 5%; /* Центрируем */
+  }
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  transform: scaleY(1); /* Открытое состояние */
+  max-height: 500px; /* Достаточно большое значение для содержимого */
+  visibility: visible; /* Показываем элемент */
+}
+
+.nav-link.dropdown-toggle {
+  // font-size: 18px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link.dropdown-toggle:hover {
+  color: #00bcd4;
 }
 
 </style>

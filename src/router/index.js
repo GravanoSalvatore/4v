@@ -20,19 +20,19 @@ const router = createRouter({
       component: () => import('../views/COMPANY/AboutComp.vue')
     },
     {
-      path: '/benefits',
-      name: 'benefits',
-      component: () => import('../views/COMPANY/BenefitsComp.vue')
+      path: '/techSpec',
+      name: 'techSpec',
+      component: () => import('../views/COMPANY/TechSpec.vue')
     },
     {
-      path: '/blog',
-      name: 'blog',
-      component: () => import('../views/COMPANY/BlogComp.vue')
+      path: '/token',
+      name: 'token',
+      component: () => import('../views/COMPANY/Token.vue')
     },
     {
-      path: '/referal',
-      name: 'referal',
-      component: () => import('../views/COMPANY/ReferalComp.vue')
+      path: '/road',
+      name: 'road',
+      component: () => import('../views/COMPANY/Road.vue')
     },
     {
       path: '/pos',

@@ -187,15 +187,72 @@ ul {
   <br/><br/>
   <div class="container ">
     <div class="bridge text-white">
-      <h1 style="color: orange;">4V.DEX</h1>
-      <h6 class="text-white mb-3">
-    Покупайте, продавайте и обменивайте вашу криптовалюту на нашем DEX - 4V.DEX! Наш межсетевой мост поддерживает основные сети, такие как TON, Ethereum, TRON, Binance Smart Chain, Polygon, TON, Avalanche, Fantom и другие, обеспечивая широкие возможности для пользователей.
-      </h6>
+      <h1 
+            style="" 
+            class=" position-relative text-white-50">4V.Bridge<span class="text-danger">X </span>
+           <!-- <span 
+              class="fw-bold"
+              style="
+              font-size:11px;
+              color:cornflowerblue"
+              
+              >ознакомиться с подробной документацией</span> -->
+              <span
+                class="badge bg-success  text-white position-absolute"
+                style="
+                /* background-color:cornflowerblue; */
+                  top: -12px;
+                  /* right: 0px; */
+                  font-size: 8px;
+                  font-weight: bold;
+                  text-transform: uppercase;
+                "
+              >
+                alpha
+              </span>
+            </h1>
+            <div class="velos-lab text-white card1" style="max-width:100% ! important">
+   
+
+     
+   <section class="bridge-section ">
+     <router-link to="/tech"><span 
+           class="fw-bold"
+           style="
+           font-size:16px;
+           color:cornflowerblue"
+           
+           >{{$t('Documentation')}}</span>
+         </router-link>
+    
+
+    
+   </section>
+
+   <section class="pos-section">
+     
+         <p>
+      {{$t('br6')}}
+     </p>
+     <p>
+       {{$t('br7')}}
+     </p>
+     <ul>
+       <li>{{$t('br8')}}</li>
+       <li>{{$t('br9')}}</li>
+       <li>{{$t('br10')}}</li>
+     </ul>
+     
+     
+   </section>
+ </div>
+
       <br/>
       <div class="wallet-actions">
-        <button @click="connectWallet" class="main-btn btn-danger1  text-white-50">Подключить кошелек</button>
-        <button @click="generatePublicAddress" class="main-btn btn-danger1  text-white-50">Межсетевой мост</button>
-        <button @click="viewPrivateAddresses" class="main-btn btn-danger1  text-white-50">Перейти в DEX</button>
+
+        <button @click="connectWallet" class="main-btn btn-danger1  ">{{ $t('wallet') }}</button>
+        <button  class="main-btn btn-danger1  ">{{ $t('brid') }}</button>
+        <button  class="main-btn btn-danger1  ">{{ $t('go') }}</button>
       </div>
 
       <div v-if="publicAddress" class="address-section">
@@ -240,7 +297,9 @@ ul {
 </template>
 
 <script>
+import pos from '../COMPANY/Pos.vue'
 export default {
+  components:{pos},
   data() {
     return {
       walletConnected: false,
@@ -284,17 +343,20 @@ export default {
 </script>
 
 <style scoped>
+a{
+  text-decoration: none;
+}
 .btn-danger1 {
-  color: white;
+  color:orange;
   font-weight: bold;
   font-size: 13px;
   z-index: 100;
   padding: 10px 20px;
-  border: 1px solid rgb(7, 122, 154);
+  border: 1px solid cornflowerblue;
   border-radius: 17px;
-  background-color: #091520;
+  background-color:transparent;
   background-size: 200% 200%;
-  box-shadow: 0px 5px 10px rgba(77, 75, 75, 0.6), inset 0px -2px 8px rgba(255, 255, 255, 0.2);
+  /* box-shadow: 0px 5px 10px rgba(77, 75, 75, 0.6), inset 0px -2px 8px rgba(255, 255, 255, 0.2); */
   transform: perspective(500px) translateZ(30px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

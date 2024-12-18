@@ -10,33 +10,26 @@
       <!-- Счётчик терабайт -->
       <!-- <div class="tb-counter"> <span id="tb-count">0</span> TB</div> -->
 
-      <div class="centered-text">
-        <h1>{{$t('video title')}}</h1>
+      <div class="centered-text ">
+        <h1 class="fw-bold">{{$t('video title')}}</h1>
       </div>
-      <!-- <div class="mt-5">
-        <router-link to="/about" class="" href="">
-          <button class="btn-danger1" type="button">{{$t('START')}}</button>  
-        </router-link>  
-        <router-link to="/blog">  
-          <button class="btn-danger1" type="button">{{$t('RESOURCES')}}</button>
-        </router-link>
-      </div> -->
+      
     </div>
 </section>
 
-  <div style="background-color:#091520;" class="projects-section  text-white p-0" id="projects">
+  <div style="background-color:#091520;" class="projects-section  text-white-50 p-0" id="projects">
     
     <div style="" class=" px-4 px-lg-5">
      
       <div class=" mb-5">
        
         <br />
-        <h2 style="font-size: 4.8vh" class="text-center "> {{$t('Cutting-edge technology for news and content')}}</h2>
+        <h2 style="font-size: 4.8vh" class="text-center fw-bold"> {{$t('Cutting-edge technology for news and content')}}</h2>
         <p
           class="text-white text-center  mx-auto mt-2 mb-5 "
-          style="font-size: 2.8vh"
+          style="font-size: 3.5vh"
         >
-       {{$t('4V is an innovative platform')}}
+       {{$t('bridge3')}}
         </p>
       </div>
       
@@ -48,12 +41,79 @@
   <div  class="row gx-0 mb-4 mb-lg-5 animate__animated animate-on-scroll">
     <div class="col-lg-6 ">
       
-      
+      <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar " style="width: 75%"><span style="">75% complete</span></div>
+</div>
      <a href="https://4v.news/" target="_blank" ><img
         class="img-fluid img"
         src="../../../assets//img/4vnews.png"
         alt="..."
       /></a>
+      
+    </div>
+
+    <div class="col-lg-6 animate__animated animate__fadeInLeft">
+      <div class="h-100 project">
+        <div class="d-flex h-100">
+          <div 
+          class="project-text text-center w-100 my-auto text-lg-left"
+          
+          >
+            <p style="font-size: 17px;" class="mb-0 text-white-50">
+              {{$t('4V is an innovative platform')}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="col-12 lightning-line"
+          
+        ></div>
+
+
+        
+        <div class="row gx-0 mb-4 mb-lg-5 animate__animated animate-on-scroll">
+          <div class="col-lg-6 justify-content-center align-items-center">
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar" style="width: 75%">75% complete</div>
+</div>
+     <a href="https://nuxtrobotdocker-scgh.vercel.app/" target="_blank"> <img
+        class="img-fluid img"
+        src="../../../assets/img/4vrobot.png"
+        alt="..."
+      /></a>
+        </div>
+ <div class="col-lg-6">
+          <div class="h-100 project">
+        <div class="d-flex h-100">
+          <div class="project-text w-100 my-auto text-center text-lg-right">
+            <p style="font-size: 17px" class="mb-0 text-white-50">
+            {{$t('4V.ROBOT is an indispensable assistant for channel')}} </p>
+          </div>
+        </div>
+      </div>
+        </div>
+      
+      </div>
+ 
+  <div
+        
+        class="col-12 lightning-line"
+        
+      ></div>
+  <div  class="row gx-0 mb-4 mb-lg-5 animate__animated animate-on-scroll">
+    <div class="col-lg-6 ">
+      <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar" style="width: 95%">95% complete</div>
+</div>
+      
+      <img
+        class="img-fluid img"
+        src="../../../assets//img/bot.png"
+        alt="..."
+      />
     </div>
 
     <div class="col-lg-6 animate__animated animate__fadeInLeft">
@@ -72,83 +132,13 @@
   <div class="col-12 lightning-line"
           
         ></div>
-        <div class="row gx-0 mb-4 mb-lg-5 animate__animated animate-on-scroll">
-    <div class="col-lg-6 justify-content-center align-items-center">
-     <a href="https://nuxtrobotdocker.vercel.app/" target="_blank"> <img
-        class="img-fluid img"
-        src="../../../assets/img/4vrobot.png"
-        alt="..."
-      /></a>
-        </div>
- <div class="col-lg-6">
-          <div class="h-100 project">
-        <div class="d-flex h-100">
-          <div class="project-text w-100 my-auto text-center text-lg-right">
-            <p style="font-size: 17px" class="mb-0 text-white-50">
-            {{$t('4V.ROBOT is an indispensable assistant for channel')}} </p>
-          </div>
-        </div>
-      </div>
-        </div>
-      </div>
-  <!-- Анимация для второй row -->
-  <!-- <div class="row gx-0 animate__animated animate-on-scroll">
-    <div class="col-lg-6 ">
-      <div class="h-100 project">
-        <div class="d-flex h-100">
-          <div class="project-text w-100 my-auto text-center text-lg-right">
-            <p style="font-size: 17px" class="mb-0 text-white-50">
-            {{$t('4V.ROBOT is an indispensable assistant for channel')}} </p>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-    <div class="col-lg-6 order-lg-first animate__animated animate__fadeInLeft">
-      <img
-        class="img-fluid img"
-        src="../../../assets/img/4vrobot.png"
-        alt="..."
-      />
-    </div>
-  </div> -->
-  <div
-        
-        class="col-12 lightning-line"
-        
-      ></div>
-  <div  class="row gx-0 mb-4 mb-lg-5 animate__animated animate-on-scroll">
-    <div class="col-lg-6 ">
-      
-      
-      <img
-        class="img-fluid img"
-        src="../../../assets//img/bot.png"
-        alt="..."
-      />
-    </div>
-
-    <div class="col-lg-6 animate__animated animate__fadeInLeft">
-      <div class="h-100 project">
-        <div class="d-flex h-100">
-          <div class="project-text text-center w-100 my-auto text-lg-left">
-            <p style="font-size: 17px;" class="mb-0 text-white-50">
-             {{$t('4V is an innovative platform')}}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
- 
-  <div class="col-12 lightning-line"
-          
-        ></div>
   <!-- Анимация для второй row -->
   <div class="row gx-0 mb-4 mb-lg-5 animate__animated animate-on-scroll">
     <div class="col-lg-6 justify-content-center align-items-center">
-          
-          <img style="" class="img-fluid img" src="../../../assets/img/4vcrypto.png" alt="..." />
+      <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar" style="width: 75%">75% complete</div>
+</div>
+          <img style="" class="img-fluid img" src="../../../assets/img/4vcoin.png" alt="..." />
         </div>
  <div class="col-lg-6">
           <div class=" h-100 project">
@@ -156,6 +146,7 @@
               <div class="project-text text-center w-100 my-auto text-lg-left">
                 <p style="font-size: 17px" class="mb-0 text-white-50 ">
                  {{$t('4V.CRYPTO is our company’s')}}
+                 {{$t('4V.coin is a token on the TON')}}
                 </p>
                 <p
                   style="font-size: 17px"
@@ -186,32 +177,55 @@
 
 
       <br /><br />
-    
-      <!-- <h2 class="text-white-50  text-center">Решение</h2> -->
-      <!-- <div class="row gx-0 animate__animated animate-on-scroll">
-        <div class="col-lg-6 ">
-      <img
-        class="img-fluid img"
-        src="../../../assets/img/bridge.png"
-        alt="..."
-      />
-    </div>
-   
-    <div class="col-lg-6 order-lg-first animate__animated animate__fadeInLeft">
-      <div class="h-100 project">
-        <div class="d-flex h-100">
-          <div class="project-text w-100 my-auto text-center text-lg-right">
-            <p style="font-size: 17px" class="mb-0 text-white-50">
-            {{$t('The best solution for news')}} </p>
+      <div class="row gx-0 mb-4 mb-lg-5 animate__animated animate-on-scroll">
+    <div class="col-lg-6 justify-content-center align-items-center">
+      <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar" style="width: 100%">100% complete</div>
+</div>
+       <a href="https://t.me/FourVrobot/FourVworldNews?startapp" >  
+          <img style="" class="img-fluid img" src="../../../assets/img/apes.png" alt="..." />
+       </a>     </div>
+ <div class="col-lg-6">
+          <div class=" h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text text-center w-100 my-auto text-lg-left">
+                <p style="font-size: 17px" class="mb-0 text-white-50 ">
+                 <!-- {{$t('4V.CRYPTO is our company’s')}} -->
+                 {{$t('apes1')}}
+                </p>
+                <p
+                  style="font-size: 17px"
+                  class="mb-0 text-white-50 fw-bold"
+                ></p>
+              </div>
+            </div>
           </div>
         </div>
+       
       </div>
-    </div>
-  </div> -->
+ 
+  
+  
+  
+  
+  
+  
+  
+  <div class="col-12 lightning-line"
+          
+        ></div>
+
+
+  
+<br/><br/>
+    
+      
   <div  class="row gx-0 mb-4 mb-lg-5 animate__animated animate-on-scroll">
     <div class="col-lg-6 ">
       
-      
+      <div  class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar" style="width: 45%;background-color:">45% complete</div>
+</div>
     <router-link to="/about" > <img
         class="img-fluid img"
         src="../../../assets//img/bridge.png"
@@ -224,8 +238,8 @@
         <div class="d-flex h-100">
           <div class="project-text text-center w-100 my-auto text-lg-left">
             <p style="font-size: 17px;" class="mb-0 text-white-50">
-              BridgeX это революционная платформа, предназначенная для решения одного из самых актуальных вызовов, стоящих перед современным блокчейн-сообществом: кроссчейн взаимодействие и конфиденциальность. 
-               <!-- {{$t('4V.NEWS is an innovative platform that combines')}} -->
+              <!-- 4V.BridgeX это революционная платформа, предназначенная для решения одного из самых актуальных вызовов, стоящих перед современным блокчейн-сообществом: кроссчейн взаимодействие и конфиденциальность.  -->
+               {{$t('bridge')}}
             </p>
           </div>
         </div>
@@ -237,58 +251,15 @@
           class="col-12 lightning-line"
           
         ></div>
-        <div  class="row gx-0 mb-4 mb-lg-5 animate__animated animate-on-scroll">
-    <div class="col-lg-6 ">
-      
-      
-       <img style="" class="img-fluid img" src="../../../assets//img/4vcoin.png" alt="..." />
-    </div>
-
-    <div class="col-lg-6 animate__animated animate__fadeInLeft">
-      <div class=" h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white fw-bold"><a></a></h4>
-                <p style="font-size: 17px" class="mb-0 text-white-50 ">
-                  {{$t('4V.coin is a token on the TON')}}
-                </p>
-              </div>
-            </div>
-          </div>
-    </div>
-  </div>
-      <!-- <div class="row gx-0 animate__animated animate-on-scroll">
-       
         
-        <div class="col-lg-6 animate__animated animate__fadeInLeft">
-          <img style="" class="img-fluid img" src="../../../assets//img/4vcoin.png" alt="..." />
-        </div>
-        <div class="col-lg-6 order-lg-first animate__animated animate__fadeInLeft">
-          <div class=" h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white fw-bold"><a></a></h4>
-                <p style="font-size: 17px" class="mb-0 text-white-50 ">
-                  {{$t('4V.coin is a token on the TON')}}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-      <div
-        
-          class="col-12 lightning-line"
-          
-        ></div>
+     
     </div>
     
     <!-- <videoFile/> -->
     <div class="card1">
-      <div class="marquee">
+      <!-- <div class="marquee">
     <p style="font-size:14px">{{$t('We are constantly')}}</p>
-  </div>
+  </div> -->
     <p
         class="text-white-50 text-center  mx-auto  container "
         style="font-size: 18px"
@@ -303,10 +274,10 @@
         <img src="https://imageio.forbes.com/specials-images/imageserve/64b5825a5b9b4d3225e9bd15/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds" class="card-img-top" alt="..." />
         <div class="card-body image-text">
           <!-- <h5 class="card-title">BridgeX</h5> -->
-       <a class="text-white" href="https://nuxtrobotdocker.vercel.app/" target="_blank" >
-        <p style="font-size:14px" class="card-text opas">
-          <h3>4V.ROBOT<span class="text-info" style="font-size: 14px;">Beta v1.0</span></h3>
-            {{$t('4V.ROBOT integrates')}}
+       <a class="text-white" href="https://nuxtrobotdocker-scgh.vercel.app/" target="_blank" >
+        <p style="font-size:14px" class="card-text opas ">
+         <span class="fw-bold">4V.ROBOT</span><span class="text-info" style="font-size: 14px;">Beta v1.0</span>
+          <br/>  {{$t('4V.ROBOT integrates')}}
           </p> </a>
           <!-- <p class="card-text">
             <small class="text-muted">Last updated 3 mins ago</small>
@@ -319,7 +290,7 @@
         <div class="overlay"></div>
         <img src="https://pixelplex.io/wp-content/uploads/2023/02/how-to-create-a-dao-main-1600.jpg" class="card-img-top" alt="..." />
         <div class="card-body image-text">
-        <p style="font-size:14px" class="card-text opas">
+        <p style="font-size:14px" class="card-text opas fw-bold">
       {{$t('The DAO')}}    </p>
         </div>
       </div>
@@ -331,7 +302,7 @@
           <!-- <h5 class="card-title">zk-SNARKs</h5> -->
           <a class="text-white" href="https://t.me/FourVrobot/FourVworldNews?startapp" target="_blank">   
             <p style="font-size:14px" class="card-text opas ">
-            4V.COIN(FVX)
+           <span class="fw-bold"> 4V.APES</span> (FVX)
             <br/>{{$t('you can now mine')}}
           </p></a>
           <!-- <p class="card-text">
@@ -523,7 +494,7 @@ style="font-size: 18px">Интеграция с 4V.News.
       <div class="card b bg-dark text-white overlay-card">
         <img src="https://swisscognitive.ch/wp-content/uploads/2020/09/the-4-top-artificial-intelligence-trends-for-2021.jpeg" class="card-img b img-fluid" alt="..." style="height:250px; object-fit: cover;">
         <div class="card-img-overlay d-flex flex-column justify-content-end overlay-content">
-          <!-- <h5 class="card-title">GLIDE (Global Localized Intelligent Dynamic Engine).</h5> -->
+          <h5 class="card-title">GLIDE (Global Localized Intelligent Dynamic Engine).</h5>
           <p style="font-size:14px;" class="card-text">{{$t('This system')}} </p>
         </div>
       </div>
@@ -762,7 +733,7 @@ methods: {
 
 .card2:hover {
   /* Тень активируется при наведении */
-  box-shadow: inset 0 10px 30px purple;
+  // box-shadow: inset 0 10px 30px purple;
 }
 
 /* Динамическое создание стилей для каждой карточки */
@@ -1074,7 +1045,7 @@ video {
 }
 /* Адаптация для мобильных устройств */
 @media screen and (max-width: 768px) {
-  .video-overlay h1 {
+  .video-overlay h2 {
     font-size: 9vw;
   }
 

@@ -1,12 +1,19 @@
 <template>
     <div class="background-image-container">
       <div class="banner">
-        <div class="banner-content text-center text-white-50">
-          <p>
-           <span class="fw-bold" style="color: cornflowerblue;"> 4V.Bridge<span class="text-danger">X</span></span> {{ $t('4V.NEWS is an innovative platform that combines') }}    </p>
-          <div class="button-container">
-           <router-link to="/about"> <button class="btn-danger1">{{ $t('Find out more') }}</button></router-link>
-          </div>
+        <div class="banner-content text-center ">
+          <router-link to="/about"> <p class="text-white-50">
+           <!-- <span class="fw-bold" style="color: cornflowerblue;"> 
+            4V.Bridge<span class="text-danger">X</span>
+          </span>   -->
+           {{$t('bridge')}}   
+        </p>
+         
+      </router-link>
+         
+           <!-- <div class="button-container">
+            <button class="btn-danger1">{{ $t('Find out more') }}</button>
+          </div> -->
         </div>
       </div>
     </div>
@@ -19,6 +26,11 @@
   </script>
   
   <style scoped>
+  a{
+    /* font-weight: bold; */
+    text-decoration: none;
+    color: white;
+  }
   .background-image-container {
     background-image: url('https://vault12.com/media-library/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8yNTY0NzUyMC9vcmlnaW4ucG5nIiwiZXhwaXJlc19hdCI6MTc3MDc4NzIxMH0._mWOpVHC-nrbt3t76sNU7suyompheV9jRsEZfovFCxM/image.png?width=1200&height=600&coordinates=0%2C156%2C0%2C157'); 
     background-size: cover;
@@ -34,7 +46,7 @@
     background-color: rgba(20, 20, 20, 0);
     backdrop-filter: blur(12px); 
     width: 90%;
-    height: 70%;
+    height: 40%;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.4); 

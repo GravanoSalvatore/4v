@@ -9,7 +9,8 @@
       <li><a href="#glide">{{ $t("techDoc.glide") }}</a></li>
       <li><a href="#newsAggregation">{{ $t("techDoc.newsAggregation") }}</a></li>
       <li><a href="#robot">{{ $t("techDoc.robot") }}</a></li>
-      <li><a href="#crypto">{{ $t("techDoc.crypto") }}</a></li>
+      <li><a href="#crypto">4V.COIN</a></li>
+      <li><a href="#bridge">{{ $t("4V.BridgeX") }}</a></li>
       <li><a href="#dex">{{ $t("techDoc.dex") }}</a></li>
       <li><a href="#defi">{{ $t("techDoc.defi") }}</a></li>
       <li><a href="#coin">{{ $t("techDoc.coin") }}</a></li>
@@ -72,14 +73,9 @@
       <li>{{ $t("techDoc.secureTransactions") }}</li>
       <li>{{ $t("techDoc.defiIntegration") }}</li>
     </ul>
-
-    <!-- 4V.DEX -->
-    <h2 id="dex">{{ $t("techDoc.dex") }}</h2>
-    <p>{{ $t("techDoc.dexDescription") }}</p>
-
-    <!-- 4V.coin -->
-    <h2 id="coin">{{ $t("techDoc.coin") }}</h2>
-    <p>{{ $t("techDoc.coinDescription") }}</p>
+     <!-- 4V.coin -->
+     <!-- <h2 id="coin">{{ $t("techDoc.coin") }}</h2> -->
+    <h2>{{ $t("techDoc.coinDescription") }}</h2>
 
     <h3>{{ $t("techDoc.tokenFeatures") }}</h3>
     <ul>
@@ -90,6 +86,20 @@
     </ul>
 
     <p>{{ $t("techDoc.interoperability") }}</p>
+    <!-- 4V.BridgeX-->
+    <h1 id="bridge">Bridge<span class="text-danger">X</span><span style="font-size:10px"><router-link to="/tech">подробнее</router-link></span></h1>
+    <!-- <p>{{ $t("4V.BridgeX") }}</p> -->
+    <!-- <ul>
+      <li>4V.BridgeX {{ $t("techDoc.marketMonitoring") }}</li>
+      <li>4V.BridgeX {{ $t("techDoc.secureTransactions") }}</li>
+      <li>4V.BridgeX {{ $t("techDoc.defiIntegration") }}</li>
+    </ul> -->
+
+    <!-- 4V.DEX -->
+    <h2 id="dex">{{ $t("techDoc.dex") }}</h2>
+    <p>{{ $t("techDoc.dexDescription") }}</p>
+
+   
 
     <!-- DAO -->
     <h2 id="dao">{{ $t("techDoc.dao") }}</h2>
@@ -97,13 +107,20 @@
     <p>{{ $t("techDoc.daoDescription2") }}</p>
 
     <!-- Заключение -->
-    <h2 id="conclusion">{{ $t("techDoc.conclusion") }}</h2>
-    <p>{{ $t("techDoc.conclusionDescription") }}</p>
+    <!-- <h2 id="conclusion">{{ $t("techDoc.conclusion") }}</h2>
+    <p>{{ $t("techDoc.conclusionDescription") }}</p> -->
   </div>
+   <br/>
+  <token/>
+  <br/>
+  <road/>
 </template>
 
 <script>
+import road from "../COMPANY/Road.vue";
+import token from "../COMPANY/Token.vue";
 export default {
+  components:{token,road},
   name: "TechDocumentation",
 };
 </script>

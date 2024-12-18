@@ -1,5 +1,5 @@
 <template>
-  <div id="app" style="background-color:#091520;" class="">
+  <div id="app" style="background-color:#01263f;" class="">
     <navMenu />
     <div class="content">
       <!-- <slider/> -->
@@ -26,16 +26,17 @@
             <div class="col-md-3 text-white-50">
               <!-- <h6 class="fw-bold ">О нас</h6> -->
               <p class="text-white-50">
-               {{ $t('4V is an innovative') }}
+               <!-- {{ $t('4V is an innovative') }} -->
+               {{$t('bridge3')}}
               </p>
             </div>
             <!-- Вторая колонка -->
             <div class="col-md-3">
               <!-- <h6 class="fw-bold text-white-50">Контакты</h6> -->
               <ul class="list-unstyled text-white-50">
-                <li>Email: support@4V.io</li>
-                <li>Телефон: +123 456 789</li>
-                <li>Адрес: 1234 VELOS Ave, Blockchain City</li>
+                <li>Email: fourv@gmail.com</li>
+                <!-- <li>Телефон: +123 456 789</li> -->
+                <!-- <li>Адрес: 1234 4V Ave, Blockchain City</li> -->
               </ul>
             </div>
             <!-- Третья колонка -->
@@ -59,7 +60,7 @@
                   >
                 </li>
                 <li>
-                  <a href="#" class="text-white-50">
+                  <a href="https://t.me/FourVcoin" target="_blank" class="text-white-50">
                     <svg
                       width="16"
                       height="16"
@@ -73,7 +74,7 @@
                     Telegram</a
                   >
                 </li>
-                <li>
+                <!-- <li>
                   <a href="#" class="text-white-50">
                     <svg
                       width="16"
@@ -94,7 +95,7 @@
                     </svg>
                     GitHub
                   </a>
-                </li>
+                </li> -->
                 <li>
                   <a href="#" class="text-white-50">
                     <svg
@@ -112,7 +113,7 @@
                   >
                 </li>
                 <li>
-                  <a href="#" class="text-white-50">
+                  <a href="https://www.youtube.com/channel/UCrd06CUAPnqJVgUciS7rLog" target="_blanck" class="text-white-50">
                     <svg
                       width="16"
                       height="16"
@@ -128,7 +129,7 @@
                   >
                 </li>
                 <li>
-                  <a href="#" class="text-white-50">
+                  <a href="https://x.com/FourVcoin" target="_blank" class="text-white-50">
                     <svg
                       width="16"
                       height="16"
@@ -151,14 +152,15 @@
                 <input
                   type="email"
                   class="form-control mb-2 btn-danger1"
-                  placeholder="Ваш Email"
+                  placeholder="Email"
                 />
+                <br/>
                 <textarea
                   class="form-control mb-2 btn-danger1"
-                  placeholder="Сообщение"
+                  placeholder=""
                 ></textarea>
                 <button type="submit" class="mt-2 btn-danger1">
-                  Отправить
+                 {{ $t('send') }}
                 </button>
               </form>
             </div>
@@ -167,7 +169,7 @@
           <!-- Копирайт -->
           <div class="row mt-4 text-center">
             <p class="text-white-50">
-              &copy; 2024 Фонд 4V. Все права защищены.
+              &copy; 2024 Company  4V. All rights reserved.
             </p>
           </div>
         </div>
@@ -229,7 +231,7 @@ export default {
   padding: 10px 20px;
   border: 1px solid rgb(7, 122, 154);
   border-radius: 17px;
-  background-color: #091520; /* Более тёмный оттенок с фиолетово-синим */
+  background-color:transparent; /* Более тёмный оттенок с фиолетово-синим */
   background-size: 200% 200%;
   // box-shadow: 0px 5px 10px rgba(77, 75, 75, 0.6),
   //   inset 0px -2px 8px rgba(255, 255, 255, 0.2);
@@ -324,28 +326,7 @@ a {
 .btn-light:hover {
   background-color: rgb(18, 36, 45);
 }
-// .btn-light {
-//   background-color: #444;
-//   color: white;
-//   border: none;
-// }
 
-// .btn-light:hover {
-//   background-color: #666;
-// }
-// .back {
-//   position: fixed;
-//   top: 110px;
-//   right: 0;
-//   left: 0;
-//   z-index: 5;
-// }
-// .content {
-//   margin-top: 0px;
-//   @media screen and (max-width: 640px) {
-//     margin-top: 50px;
-//   }
-// }
 .scroll-to-top {
   font-weight: bold;
 

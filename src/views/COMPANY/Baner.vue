@@ -5,7 +5,7 @@
   <div class="container">
     <div class="overlay">
       <div class="content text-white">
-        <h1 class="text-white">{{$t('Welcome to 4V.NEWS1')}}<span class="text-info" style="font-size: 14px;">Beta v1.0</span></h1>
+        <h1 class="text-white">{{$t('Welcome to 4V.NEWS1')}}<span class="text-info" style="font-size: 14px;">Beta</span></h1>
         <!-- <p> Мир  новостей!</p> -->
         <a href="https://4v.news/" target="_blank">
           <button class="btn-danger1">{{ $t('Learn More') }}</button>

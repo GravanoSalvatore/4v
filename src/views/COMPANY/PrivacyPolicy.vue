@@ -103,7 +103,7 @@ export default {
 <style scoped>
 .container {
   padding: 20px;
-  background-color: #091520;
+  /* background-color: #091520; */
   border-radius: 10px;
 }
 

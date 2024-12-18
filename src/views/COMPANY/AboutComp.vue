@@ -13,6 +13,7 @@
         <div style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
       url('https://s33007.pcdn.co/wp-content/uploads/2022/11/Website-Image_Wide-tmt_blockchain_gettyimages_1322421028-1800x1013.jpg');
       background-size: cover;
+      
       background-position: center;
       background-repeat: no-repeat;" class=" px-4 px-lg-5">
          
@@ -23,30 +24,27 @@
             </span> -->
             <br /> <br /> <br /> <br />
             <h1 
-            style="color:cornflowerblue" 
-            class=" ">4V.BridgeX 
+            style="" 
+            class="text-white-50">4V.Bridge<span class="text-danger">X </span>
             <router-link to="/tech"><span 
-              class="fw-bold"
-              style="
-              font-size:16px;
-              color:green"
-              
-              >ознакомиться с подробной документацией</span>
-            </router-link>
-            </h1>
+           class="fw-bold"
+           style="
+           font-size:16px;
+           color:cornflowerblue"
+           
+           >{{$t('Documentation')}}</span>
+         </router-link>
+            </h1>  
+     
+    
+
+    
+  
             <p
-              class="text-white text-uppercase mx-auto mt-2 mb-5 "
-              style="font-size: px"
+              class="text-white text-center text-uppercase mx-auto mt-2 mb-5 "
+              style="font-size:20px"
             >
-               В современном криптовалютном мире важнейшими аспектами
-              являются приватность, безопасность и удобство перемещения активов
-              между различными блокчейнами. С развитием кросс-чейн технологий
-              пользователи сталкиваются с новыми вызовами, такими как сложность
-              взаимодействия с мостами (bridges), риски безопасности и угрозы
-              приватности. В ответ на эти вызовы мы представляем VELOS (Verified
-              Exchange & Layered Obfuscated Security), инновационную систему,
-              направленную на простое, быстрое и безопасное перемещение активов
-              между блокчейнами с высоким уровнем анонимности.
+              {{$t('br1')}}
             </p>
           </div>
           
@@ -71,11 +69,12 @@
             <div class="d-flex h-100">
               <div class="project-text text-center w-100 my-auto text-lg-left">
                 <p style="font-size: 17px;" class="mb-0 text-white">
-                  Приватность транзакций: Современные блокчейн-сети по своей
+                  <!-- Приватность транзакций: Современные блокчейн-сети по своей
                       природе прозрачны, что позволяет отслеживать каждую транзакцию
                       и её участников. Это создает риски, особенно для тех
                       пользователей, которые ценят конфиденциальность своих
-                      финансовых операций.
+                      финансовых операций. -->
+                      {{$t('br2')}}
                 </p>
               </div>
             </div>
@@ -97,11 +96,13 @@
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
                 <p style="font-size: 17px" class="mb-0 text-white">
-                  Удобство перемещения активов между сетями: Мосты (bridges),
+                  <!-- Удобство перемещения активов между сетями: Мосты (bridges),
                       соединяющие различные блокчейны, часто сложны в использовании
                       и подвержены рискам атак. Безопасность: Уязвимости в
                       кросс-чейн инфраструктуре могут приводить к взломам, кражам
-                      средств и потере доверия со стороны пользователей.
+                      средств и потере доверия со стороны пользователей. -->
+
+                      {{$t('br3')}}
                 </p>
               </div>
             </div>
@@ -128,7 +129,7 @@
                 <div class="d-flex h-100">
                   <div class="project-text text-center w-100 my-auto text-lg-left">
                     <p style="font-size: 17px" class="mb-0 text-white ">
-                      BridgeX предоставляет возможность пользователям беспрепятственно перемещать свои активы между такими сетями, как Ethereum, Binance Smart Chain, Polygon, Solana и другими.
+                      {{$t('br4')}}
                     </p>
                     <p
                       style="font-size: 17px"
@@ -149,47 +150,48 @@
                   <div class="project-text w-100 my-auto text-center text-lg-right">
                     <h4 class="text-white fw-bold"><a></a></h4>
                     <p style="font-size: 17px" class="mb-0 text-white ">
-                      Используя передовые технологии обфускации и шифрования, такие
-                      как кольцевые подписи (Ring Signatures) и zk-SNARKs.
+                      {{$t('br5')}}
                     </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <br/> <br/><br/> 
-    
-    <div class="velos-lab text-white card1" style="max-width:100% ! important">
-   
-
-     
-      <section class="bridge-section ">
-        <h3> 4V.DEX</h3>
-        <p>
-          Покупайте, продавайте и обменивайте вашу криптовалюту на нашем DEX - 4V.DEX! наш межсетевой мост позволяет перемещать активы между различными блокчейнами (например, Ethereum, Binance Smart Chain, Polygon). 
-          
-        </p>
-
-        <button class="btn-danger1" @click="goToBridge">Перейти в 4V.DEX</button>
-      </section>
-  
-      <section class="pos-section">
-        <h3> 4V.DEFI</h3>
-        <p>
-          4V.DEFI поддерживает систему Proof of Stake (PoS), позволяя пользователям получать награды за стейкинг своих токенов. Как это работает:
-        </p>
-        <ul>
-          <li>Стейкинг токенов: Вы депонируете свои токены FVX на платформе 4V.DEFI.</li>
-          <li>Вознаграждения: Чем больше токенов вы стейкаете и чем дольше они находятся в стейкинге, тем больше вы получаете вознаграждений.</li>
-          <li>Долгосрочная устойчивость: Конечная ставка вознаграждений — 10% годовых.</li>
-        </ul>
-        
-        <button class="btn-danger1" @click="goToStaking">Перейти в 4V.DEFI</button>
-      </section>
+         <br/><br/><br/><br/>
+         
+         
+          <div class=" row gx-0 animate__animated animate-on-scroll ">
+            
+     <div class="col-lg-6   animate__animated animate__fadeInLeft">
+      <div @click="goToBridge" style="border-radius:10px;box-shadow: inset 0 10px 30px rgb(31, 153, 234);">
+      <img   style="max-width:" class="img-fluid img align-items-center pointer" src="../../../assets/img/brr2.png" alt="..." />
+     <span style="color:cornflowerblue" class="p-3 pointer">Go</span>
     </div>
+            </div>
+            <div class="col-lg-6 h-100 project">
+                <div class="d-flex h-100">
+                  <div class="project-text text-center w-100 my-auto text-lg-left">
+                    <p style="font-size: 17px" class="mb-0 text-white p-3">
+                      {{$t('br6')}}
+                    </p>
+                    <p
+                      style="font-size: 17px"
+                      class="mb-0 text-white-50 fw-bold"
+                    ></p>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+    
+            <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         </div>
       
-      
+       
       </div>
         
         
@@ -294,12 +296,12 @@
  .btn-danger1 {
        
        color: white;
-        font-weight: bold;
+        // font-weight: bold;
       
-        font-size: 13px;
+        font-size: 10px;
       
         z-index: 100;
-        padding: 10px 20px;
+        // padding: 10px 10px;
         border: 1px solid rgb(7, 122, 154);
         border-radius: 17px;
         background-color:#091520; /* Более тёмный оттенок с фиолетово-синим */
@@ -336,6 +338,7 @@
   }
   
   p {
+  font-weight: bold;
     font-size: 14px;
     line-height: 1.6;
   }
@@ -350,7 +353,7 @@
   button {
     background-color: #4a90e2;
     color: white;
-    padding: 10px 20px;
+    // padding: 10px 20px;
     border: none;
     cursor: pointer;
     font-size: 16px;
@@ -450,12 +453,12 @@
     .btn-danger1 {
            
            color: white;
-            font-weight: bold;
+            // font-weight: bold;
             margin: 9px;
-            font-size: 13px;
+            // font-size: 13px;
           
             z-index: 100;
-            padding: 10px 20px;
+            // padding: 5px 20px;
             border: 1px solid rgb(7, 122, 154);
             border-radius: 17px;
             background-color:#091520; /* Более тёмный оттенок с фиолетово-синим */
@@ -761,6 +764,8 @@
       // filter: brightness(35%); 
       transform: scale(1.05); 
     }
-    
+    .o{
+      align-items: center;
+    }
     </style>
     

@@ -101,7 +101,12 @@
     scroll-behavior: smooth;
   }
 }
-
+.pointer{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+}
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);

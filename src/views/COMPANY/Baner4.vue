@@ -2,11 +2,12 @@
     <br/><br/>
       <div class="container">
         <div class="overlay">
-          <div class="content text-white">
+          <div class="content ">
             <!-- <h1 class="text-white">Welcome to 4V.COIN</h1> -->
             <!-- <p> Зарабатывай FVX!</p> -->
             <div class="timer">
-              <a href="https://t.me/FourVrobot/FourVworldNews?startapp" target="_blank">   
+              <a class="text-white" href="https://t.me/FourVrobot/FourVworldNews?startapp" target="_blank">   
+                <h1 class="text-center fw-bold">4V.APES</h1>
                 <p class="">{{ $t('Over the next 3 months') }}</p></a>
         <!-- <p>{{ $t('Dont miss your chance') }}</p> -->
        
@@ -57,8 +58,9 @@
     <style scoped>
     a{
       font-weight: bold;
-      color: cornflowerblue;
+      /* color: cornflowerblue; */
       text-decoration: none;
+      color: white;
     }
     .timer {
       padding-right: 50px;
@@ -119,7 +121,7 @@
 }
 
     p{
-        font-size:14px;
+        /* font-size:14px; */
       bottom: 100px;
     }
     .container:hover {
@@ -164,17 +166,42 @@
       font-size: 3rem;
       margin-bottom: 20px;
     } */
-    
-    
+    p{
+        font-size: 35px;
+      }
+    @media (max-width: 1050px) {
+      p{
+        font-size: 25px;
+      }
+    }
+    @media (max-width: 768px) {
+      p{
+        font-size: 22px;
+      }
+    }
+    @media (max-width: 520px) {
+      p{
+        font-size: 18px;
+      }
+    }
+    @media (max-width: 450px) {
+      p{
+        font-size: 14px;
+      }
+    }
+    @media (max-width: 350px) {
+      p{
+        font-size: 12px;
+      }
+    }
     @media (max-width: 500px) {
+     
   .container {
+
     padding-top: 150%; /* Увеличьте значение, чтобы изображение лучше подстраивалось на узких экранах */
   }
 
-  .timer {
-
-    
-  }
+  
 
   .btn-danger1 {
     font-size: 9px; /* Уменьшите размер текста кнопки */
@@ -188,9 +215,7 @@
     /* Поднимите текст и кнопку немного выше */
   }
 
-  p {
-    font-size: 13px; /* Уменьшите общий размер текста для абзацев */
-  }
+  
 }
 
     </style>

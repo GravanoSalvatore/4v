@@ -1,5 +1,5 @@
 <template>
-  <br/> <br/> <br/> <br/> <br/>
+  <!-- <br/> <br/> <br/> <br/> <br/> -->
     <div class="staking text-white">
       <h2 class=" text" style="color:  orange;;">Staking 4V.DEFI</h2>
   <p>

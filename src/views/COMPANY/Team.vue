@@ -109,12 +109,12 @@ export default {
             <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
                 <div class="col-xl-8 col-lg-7">
                     <div class="img-container">
-                        <img class="img-fluid img mb-lg-0" src="https://mc.today/wp-content/uploads/2021/02/Depositphotos_383452398_s-2019.jpg" alt="..." />
+                        <img class="img-fluid img mb-lg-0" src="https://foni.papik.pro/uploads/posts/2024-09/foni-papik-pro-g28q-p-kartinki-programmist-na-prozrachnom-fone-13.png" alt="..." />
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-5">
                     <div class="featured-text text-center text-lg-left">
-                        <h4 class="">Иван Коваленко — CEO (Канада)</h4>
+                        <h4 class="">Виктор Коваленко — CEO (Канада)</h4>
                         <p class="text-white-50 mb-0">Иван Коваленко живет в Канаде и возглавляет нашу команду как генеральный директор. Его опыт и лидерские качества позволяют нам двигаться вперед к инновациям и успеху.</p>
                     </div>
                 </div>
@@ -124,7 +124,7 @@ export default {
             <div class="row gx-0 mb- mb-lg-0 justify-content-center">
                 <div class="col-lg-6">
                     <div class="img-container">
-                        <img class="img-fluid" src="https://habrastorage.org/files/d16/3b9/9b1/d163b99b1201474e9c29a9e67d091324.jpg" alt="..." />
+                        <img class="img-fluid" src="https://foni.papik.pro/uploads/posts/2024-09/foni-papik-pro-g189-p-kartinki-programmist-na-prozrachnom-fone-9.png" alt="..." />
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -143,29 +143,10 @@ export default {
             <div class="row gx-0 justify-content-center">
                 <div class="col-lg-6">
                     <div class="img-container">
-                        <img class="img-fluid" src="https://media.istockphoto.com/id/1322050853/photo/programmer-woman-coding-on-computer.jpg?s=612x612&w=0&k=20&c=2dWoVc-FE7MiTQUo_3niGFJAHPDGAPRwbMQut3iB2Uw=" alt="..." />
+                        <img class="img-fluid" src="https://img.favpng.com/24/11/12/programmer-computer-programming-clip-art-png-favpng-zy8xuVteSV4i8xXEjPrLT3PEZ.jpg" alt="..." />
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-first">
-                    <div class="text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <h4 class="">Марта Лаане — IT-специалист и маркетолог (Эстония)</h4>
-                                <p class="mb-0 text-white-50">Марта отвечает за маркетинг и IT-инфраструктуру, обеспечивая стабильную работу и продвижение наших продуктов.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project Three Row-->
-            <div class="row gx-0 mb- mb-lg-0 justify-content-center">
-                <div class="col-lg-6">
-                    <div class="img-container">
-                        <img class="img-fluid" src="https://img.freepik.com/premium-photo/portrait-black-man-as-computer-programmer-looking-camera-while-writing-code-office-workplac_236854-44721.jpg" alt="..." />
-                    </div>
-                </div>
-                <div class="col-lg-6">
                     <div class="text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
@@ -177,11 +158,31 @@ export default {
                 </div>
             </div>
 
+            <!-- Project Three Row-->
+            <div class="row gx-0 mb- mb-lg-0 justify-content-center">
+                <div class="col-lg-6">
+                    <div class="img-container">
+                        <img class="img-fluid" src="https://www.lnkcommunications.co.za/static/media/self.217f73c06dde89865a81.png" alt="..." />
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="">Марта Лаане — IT-специалист и маркетолог (Эстония)</h4>
+                                <p class="mb-0 text-white-50">Марта отвечает за маркетинг и IT-инфраструктуру, обеспечивая стабильную работу и продвижение наших продуктов.</p>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Project Four Row-->
             <div class="row gx-0 justify-content-center">
                 <div class="col-lg-6">
                     <div class="img-container">
-                        <img class="img-fluid" src="https://media.istockphoto.com/id/1372353160/photo/young-asian-programmer-working-at-office.jpg?s=612x612&w=0&k=20&c=LO6IHvBGpqS798EZ6rmoJ8XtPs5iureu-pl38V1WxuA=" alt="..." />
+                        <img class="img-fluid" src="https://storage.googleapis.com/ureify-strapi-assets/resume_for_programmer_a1b5ad7b9c/resume_for_programmer_a1b5ad7b9c.png" alt="..." />
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-first">
@@ -200,7 +201,7 @@ export default {
             <div class="row gx-0 justify-content-center">
                 <div class="col-lg-6">
                     <div class="img-container">
-                        <img class="img-fluid" src="https://mc.today/wp-content/uploads/2020/09/Depositphotos_208630424_l-2015.jpg" alt="..." />
+                        <img class="img-fluid" src="https://freesvg.org/img/thenanobel-programming-17.01-inkscape-svg.png" alt="..." />
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -217,14 +218,14 @@ export default {
             <div class="row gx-0 justify-content-center">
                 <div class="col-lg-6">
                     <div class="img-container">
-                        <img class="img-fluid" src="https://i.work.ua/article/2492b.jpg?v=1713862817" alt="..." />
+                        <img class="img-fluid" src="https://foni.papik.pro/uploads/posts/2024-09/foni-papik-pro-g28q-p-kartinki-programmist-na-prozrachnom-fone-13.png" alt="..." />
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-first">
                     <div class="text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <h4 class="">Микк Тийк — Разработчик (Эстония)</h4>
+                                <h4 class="">Виктор Тийк — Разработчик (Эстония)</h4>
                                 <p class="mb-0 text-white-50">Микк занимается интеграцией новых решений и поддержкой наших программных продуктов.</p>
                             </div>
                         </div>

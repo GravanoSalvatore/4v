@@ -440,13 +440,15 @@
 
 
 <template>
+  
   <section class="about-section text-center" id="about">
     <div class="component-container container text-white component-1" v-if="showComponent1">
       <!-- Первый компонент -->
       <div class="row">
         <div class="col-6">
-          <br /><br />
-          <h1>{{ $t("whitepaper.title") }}</h1>
+          
+          <h1 class="fs-1">4V</h1>
+          <br/>
           <p class="lea text-white-50">
             {{ $t("whitepaper.introduction") }}
           </p>
@@ -519,9 +521,9 @@
           <p class="text-white-50">
             {{ $t("whitepaper.botDevelopmentDescription") }}
             <br />
-            <router-link to="/benefits">
+            <!-- <router-link to="/benefits">
               <button class="btn-danger1 mt-2">{{ $t("whitepaper.technicalDocumentation") }}</button>
-            </router-link>
+            </router-link> -->
           </p>
         </div>
       </div>
@@ -582,8 +584,8 @@
       <!-- Второй компонент -->
       <div class="row">
     <div class="col-12">
-        <br /><br /><br /><br />
-        <h1>{{ $t("whitepaper.title") }}</h1>
+        
+        <h1>4V</h1>
         
         <img  src="https://media.licdn.com/dms/image/D5612AQHFLVj0T0UX2A/article-cover_image-shrink_720_1280/0/1710596806311?e=2147483647&v=beta&t=XNMksUcbxjl3IIU_SPpU3WT-Qzqtnk-pWuIX35rxctg" alt="Introduction Image" class="img-fluid mt-2" />
     </div>
@@ -634,9 +636,9 @@
         <h1>{{ $t("whitepaper.botDevelopment") }}</h1>
         <p class="text-white-50">
             {{ $t("whitepaper.botDevelopmentDescription") }}
-            <router-link to="/benefits">
+            <!-- <router-link to="/benefits">
                 <button class="btn-danger1 mt-2">{{ $t("whitepaper.technicalDocumentation") }}</button>
-            </router-link>
+            </router-link> -->
         </p>
     </div>
 
@@ -792,7 +794,7 @@ img{
   border-radius: 25px;
 }
 #about {
-  background-color:#091520;
+  
 }
  
 h1 {
